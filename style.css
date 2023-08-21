@@ -1,5 +1,54 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: rgb(61, 60, 60);
+    height: 100vh;
+    gap: 200px;
+}
+
+.game-result, .scoreboard{
+    font-size: 48px;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+}
+.score-container {
+    display: flex;
+    flex-direction: column;
+}
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: rgb(184, 177, 177);
+    height: 100px;
+    width: 400px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+}
+.button:active {
+    background-color: rgb(37, 37, 37);
+    color: white;
 }

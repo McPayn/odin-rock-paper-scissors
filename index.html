@@ -8,6 +8,24 @@
     <title>Rock Paper Scissors!</title>
 </head>
 <body>
-    <h1>Inspect the Page and go to console to play!</h1>
+    <div class="result-container">
+        <div class="game-result" id="game-result1">Welcome to Rock Paper Scissors!</div>
+        <div class="game-result" id="game-result2"></div>
+    </div>
+    <div class="button-container">
+        <div class="container">
+            <button class="button" id="rock" onclick="playRound('Rock')">Rock</button>
+        </div>
+        <div class="container">
+            <button class="button" id="paper" onclick="playRound('Paper')">Paper</button>
+        </div>
+        <div class="container">
+            <button class="button" id="scissors" onclick="playRound('Scissors')">Scissors</button>
+        </div>
+    </div>
+    <div class="score-container">
+        <div class="scoreboard">Your Score: <span id="scoreboard">0</span></div>
+        <div class="scoreboard">Computer Score: <span id="comp-scoreboard">0</span></div>
+    </div>
 </body>
 </html>
